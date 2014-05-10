@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inversions</title>
+</head>
+<body>
+
+	<form action="#">
+		<input id="array" type="text">
+		<input type="submit">
+	</form>
+	<span class="result"></span>
+
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="inversions.js"></script>
+
+	<script>
+	$(document).ready(function() {
+
+		$('form').on('submit', function(event) {
+
+			var str = $(this).find('#array').val();
+			str = str.split(',');
+			var arr = [];
+			for (var i = 0; i < str.length; i++) {
+				arr.push(+str[i]);
+			}
+
+			$(".result").text(mergeSort(arr)[1]);
+		});
+
+	});
+	</script>
+	
+</body>
+</html>
