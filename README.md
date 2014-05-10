@@ -1,4 +1,4 @@
 Inversions
 ==========
 
-Building a basic ranking app using mergsorts and inversions
+Building a basic ranking app using mergesorts and inversions
